@@ -1,3 +1,9 @@
-## 1.0.0
+# Release Notes
 
-- Initial version.
+## v1.0.0
+
+* Initial stable release.
+
+## v0.1.0
+
+* Initial development release.
