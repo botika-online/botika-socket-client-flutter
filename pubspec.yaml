@@ -1,5 +1,5 @@
 name: botika_socket_client
-description: Botika Socket Client Flutter Plugin
+description: Dartlang port of botika Socket Client for web, flutter, dartvm to use
 version: 1.0.0
 homepage: https://github.com/botika-online/botika-socket-client-flutter
 repository: https://github.com/botika-online/botika-socket-client-flutter
