@@ -1,0 +1,39 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Publish to pub.dev
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      # - name: Use Dart 
+      # - uses: dart-lang/setup-dart@v1.3
+
+      # - name: Install dependencies
+      #   run: dart pub get
+
+      # - name: Verify formatting
+      #   run: dart format --output=none --set-exit-if-changed .
+
+      # - name: Analyze project source
+      #   run: dart analyze
+
+      # - name: Run tests
+      #   run: dart test
+
+      - name: Dart and Flutter Package Publisher
+        uses: k-paxian/dart-package-publisher@1.5
+        with:
+          format: true
+          flutter: true
+          accessToken: ${{ secrets.OAUTH_ACCESS_TOKEN }}
+          refreshToken: ${{ secrets.OAUTH_REFRESH_TOKEN }}
