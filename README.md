@@ -2,12 +2,6 @@
 
 This is the Botika Socket Flutter client.
 
-### Deployment targets
-
-- iOS 13.0 and above
-- Android 6.0 and above
-- Web Chrome/Edge/Firefox/Safari.
-
 ## Example Application
 
 By cloning this repository you can check the Flutter example application,
@@ -31,7 +25,7 @@ dependencies:
 import 'package:botika_socket_client/botika_socket_client.dart' as Socket;
 
 main() {
-  var socket = SocketClient('https://socket.example.com', {'token': 'example'});
+  var socket = Socket.client('https://socket.example.com', {'token': 'example'}) // or Socket.SocketClient('https://socket.example.com', {'token': 'example'});
   var channel = socket.channel('my-channel');
   channel.on('event', (data) => print(data));
 }

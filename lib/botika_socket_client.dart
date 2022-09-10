@@ -13,4 +13,9 @@
 
 library botika_socket_client;
 
+import 'src/socket.dart';
+
 export 'src/socket.dart';
+
+SocketClient client(String baseUrl, Map<String, String> auth) =>
+    SocketClient(baseUrl, auth);
