@@ -1,8 +1,16 @@
-/// Support for doing something awesome.
 ///
-/// More dartdocs go here.
+/// botika_socket_client.dart
+///
+/// Purpose:
+///
+/// Description:
+///
+/// History:
+///   11/09/2022, Created by andripgbyk
+///
+/// Copyright (C) 2022 Botika Online. All Rights Reserved.
+///
+
 library botika_socket_client;
 
-export 'src/botika_socket_client_base.dart';
-
-// TODO: Export any libraries intended for clients of this package.
+export 'src/socket.dart';
