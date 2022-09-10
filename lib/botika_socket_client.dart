@@ -17,5 +17,9 @@ import 'src/socket.dart';
 
 export 'src/socket.dart';
 
+///
+/// `Client` alias `SocketClient`.
+///
+/// @api public
 SocketClient client(String baseUrl, Map<String, String> auth) =>
     SocketClient(baseUrl, auth);

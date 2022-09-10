@@ -1,6 +1,6 @@
 name: botika_socket_client
 description: Dartlang port of botika Socket Client for web, flutter, dartvm to use
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/botika-online/botika-socket-client-flutter
 repository: https://github.com/botika-online/botika-socket-client-flutter
 issue_tracker: https://github.com/botika-online/botika-socket-client-flutter/issues

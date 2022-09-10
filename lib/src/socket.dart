@@ -13,12 +13,21 @@
 
 import 'package:socket_io_client/socket_io_client.dart' as socket_io_client;
 
+///
+/// `SocketClient` constructor.
+///
+/// @api public
 class SocketClient {
   String baseUrl;
   Map auth;
 
+  /// Constructor
   SocketClient(this.baseUrl, this.auth);
 
+  ///
+  /// Subscribe to channel
+  ///
+  /// @api private
   socket_io_client.Socket channel(String name, [opts]) {
     return socket_io_client.io(
         '$baseUrl/$name',
